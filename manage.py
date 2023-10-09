@@ -6,7 +6,7 @@ import sys
 
 def main():
     """Запуск административных задач."""
-    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'menu_example.settings')
+    os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'tree_menu.settings')
     try:
         from django.core.management import execute_from_command_line
     except ImportError as exc:
