@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load tree_menu %}
+{% block title %} Tree-Menu {% endblock %}
+{% block content %}
+<h2> Tree Menu Page </h2>
+{% if menu %}
+    {% draw_menu "main_menu" %}
+{#    {% draw_menu "menu_second" %}#}
+{% else %}
+    <p>Меню не найдено.</p>
+{% endif %}
+{% endblock %}
